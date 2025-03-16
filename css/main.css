@@ -1,0 +1,98 @@
+/* Import */
+@import url(style.css);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --primary-blue: #27306B;
+
+    /* Fonts */
+    --body-font: Poppins, sans-serif;
+    --heading-font: Poppins, sans-serif;
+    --p: 1rem/1.2em var(--body-font);
+    --h1: 600 2rem/1.2em var(--heading-font);
+    --h2: 600 1.5rem/1.2em var(--heading-font);
+
+    /* Spacing */
+    --spacing1: 5px;
+    --spacing2: 10px;
+    --spacing3: 15px;
+    --spacing4: 20px;
+    --spacing5: 30px;
+    --spacing6: 50px;
+    --spacing7: 160px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--primary-blue);
+    color: var(--color-white);
+    text-align: left;
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+    margin: var(--spacing3) 0;
+}
+
+p,li {
+    font: var(--p);
+    margin: var(--spacing2) 0;
+    line-height: var(--spacing5);
+}
+
+
+/* a {
+    color: var(--ghost-white);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--cool-gray);
+} */
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: var(--spacing4);
+    padding: var(--spacing2) var(--spacing3);
+    background: var(--color-white);
+    color: var(--primary-blue);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: var(--spacing1);
+    transition: background 0.35s ease-in-out, color 0.35s ease-in-out; /* Only transition color changes */
+}
+
+.btn:hover {
+    padding: calc(var(--spacing2) - 1px) calc(var(--spacing3) - 1px);
+    border: 1px solid var(--color-white);
+    transition: none; /* Instantly apply the border & padding change */
+}
+
+.btn:hover {
+    background: var(--primary-blue);
+    color: var(--color-white);
+    transition: background 0.35s ease-in-out, color 0.35s ease-in-out; /* Apply transition only to color */
+}
+
+
+/* ========== Media Queries ========== */
+
