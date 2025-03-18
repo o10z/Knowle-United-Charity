@@ -69,7 +69,7 @@ a:hover {
 } */
 
 /* Button Styling */
-.btn {
+.btn,button {
     display: inline-block;
     margin-top: var(--spacing4);
     padding: var(--spacing2) var(--spacing3);
@@ -81,13 +81,13 @@ a:hover {
     transition: background 0.35s ease-in-out, color 0.35s ease-in-out; /* Only transition color changes */
 }
 
-.btn:hover {
+.btn:hover, button:hover {
     padding: calc(var(--spacing2) - 1px) calc(var(--spacing3) - 1px);
     border: 1px solid var(--color-white);
     transition: none; /* Instantly apply the border & padding change */
 }
 
-.btn:hover {
+.btn:hover, button:hover {
     background: var(--primary-blue);
     color: var(--color-white);
     transition: background 0.35s ease-in-out, color 0.35s ease-in-out; /* Apply transition only to color */

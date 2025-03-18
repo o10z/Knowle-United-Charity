@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Travel Project Grant Application</title>
+
+    <!-- FavIcon -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/application.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Student Travel Project Grant Application</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <!-- 1. Applicant Information -->
+        <fieldset>
+          <legend>1. Applicant Information</legend>
+
+          <label for="full-name"
+            >Full Name: <span class="required">*</span></label
+          >
+          <input type="text" id="full-name" name="full-name" required />
+
+          <label for="date">Date: <span class="required">*</span></label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="first-name"
+            >First Name: <span class="required">*</span></label
+          >
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name"
+            >Family Name: <span class="required">*</span></label
+          >
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="address">Address: <span class="required">*</span></label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="post-code"
+            >Post Code: <span class="required">*</span></label
+          >
+          <input type="text" id="post-code" name="post-code" required />
+
+          <label for="phone">Phone No: <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email: <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="dob"
+            >Date of Birth: <span class="required">*</span></label
+          >
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <!-- 2. Travel Project Information -->
+        <fieldset>
+          <legend>2. Travel Project Details</legend>
+
+          <label for="project-title"
+            >Project Title: <span class="required">*</span></label
+          >
+          <input type="text" id="project-title" name="project-title" required />
+
+          <label for="destination"
+            >Destination: <span class="required">*</span></label
+          >
+          <input type="text" id="destination" name="destination" required />
+
+          <label for="purpose"
+            >Purpose of Travel: <span class="required">*</span></label
+          >
+          <textarea id="purpose" name="purpose" rows="5" required></textarea>
+
+          <label for="charity-name"
+            >Charity or Organization Involved (if applicable):</label
+          >
+          <input type="text" id="charity-name" name="charity-name" />
+
+          <label for="travel-dates"
+            >Planned Travel Dates: <span class="required">*</span></label
+          >
+          <input type="text" id="travel-dates" name="travel-dates" required />
+        </fieldset>
+
+        <!-- 3. Estimated Costs & Funding -->
+        <fieldset>
+          <legend>3. Estimated Costs & Funding</legend>
+
+          <label for="estimated-cost"
+            >Total Estimated Cost (£): <span class="required">*</span></label
+          >
+          <input
+            type="number"
+            id="estimated-cost"
+            name="estimated-cost"
+            required
+          />
+
+          <label for="funding-sources"
+            >Other Sources of Funding (if any):</label
+          >
+          <textarea
+            id="funding-sources"
+            name="funding-sources"
+            rows="3"
+          ></textarea>
+        </fieldset>
+
+        <!-- 4. Supporting Documents -->
+        <fieldset>
+          <legend>4. Attach Supporting Documents</legend>
+          <p>
+            Please upload proof of charity involvement and travel plans (PDF,
+            JPG, PNG, DOCX).
+          </p>
+          <input
+            type="file"
+            name="supporting-docs"
+            id="supporting-docs"
+            required
+            accept=".pdf,.jpg,.png,.docx"
+          />
+        </fieldset>
+
+        <!-- Signature Section -->
+        <fieldset>
+          <legend>Applicant's Signature</legend>
+          <label>Sign Below: <span class="required">*</span></label>
+          <canvas id="signature-pad"></canvas>
+          <br />
+          <button type="button" id="clear-signature">Clear</button>
+          <input type="hidden" name="signature" id="signature-data" />
+        </fieldset>
+
+        <!-- Guidance Notes -->
+        <fieldset>
+          <legend>Guidance Notes</legend>
+          <ul>
+            <li>
+              Please attach evidence of your University / College place /
+              Student status with your application.
+            </li>
+            <li>
+              Applications for Education Grants should be submitted prior to
+              15th October and will be considered by the Trustees at their
+              November Meeting. Grants are not automatically given year on year
+              and you must apply for a grant in each year of study.
+            </li>
+            <li>
+              You must normally be under 21 years old at the date of the first
+              application, although older applicants will be considered. A Post
+              Graduate application will be considered but the total of all
+              education grants made will be limited to THREE.
+            </li>
+            <li>
+              You must be resident in the Charity’s area of benefit (i.e. the
+              Parishes of Knowle, Dorridge, Bentley Heath, Barston and the Civil
+              Parishes of Balsall Common and Chadwick End.)
+            </li>
+            <li>
+              For security purposes all correspondence will be directed to your
+              home address and not to University/College Halls of Residence or
+              to your accommodation in the area of study
+            </li>
+            <li>
+              If you are under under 18 years, this application must be also be
+              signed by your parent or legal guardian to consent to the
+              application being made and payment of a grant to you.
+            </li>
+            <li>
+              The Decision of the Trustees as to the award of a Grant is final,
+              and no correspondence can be entered into.
+            </li>
+            <li>
+              Any money awarded and not used for the specified purpose should be
+              returned to the Clerk to the Trustees.
+            </li>
+          </ul>
+          <p>
+            All information disclosed to us will be treated in the strictest
+            confidence.
+          </p>
+          <p>
+            Please complete and return to – The Clerk to the Trustees S.J.
+            Chaloner, 31 Kenilworth Road, Knowle, Solihull, West Midlands, B93
+            0JB Email: Knowleunitedcharities@blueyonder.co.uk
+          </p>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+
+    <!-- Signature Pad JS -->
+    <script src="js/application.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Grant Application</title>
+
+    <!-- FavIcon -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/application.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>Application for an Educational Grant 2025/2026</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Applicant Information -->
+        <fieldset>
+          <legend>1. Applicant Information</legend>
+          <label for="full-name"
+            >Full Name: <span class="required">*</span></label
+          >
+          <input
+            placeholder="Frist names Family name"
+            type="text"
+            id="full-name"
+            name="full-name"
+            required
+          />
+
+          <label for="date">Date: <span class="required">*</span></label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="address">Address: <span class="required">*</span></label>
+          <textarea id="address" name="address" required></textarea>
+
+          <label for="postcode"
+            >Post Code: <span class="required">*</span></label
+          >
+          <input type="text" id="postcode" name="postcode" required />
+
+          <label for="phone">Phone No: <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email: <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="dob"
+            >Date of Birth: <span class="required">*</span></label
+          >
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <!-- Education Details -->
+        <fieldset>
+          <legend>2. Information for Grant</legend>
+          <a>Please note grants are only available for post 18 study</a>
+          <label for="school"
+            >Secondary Education: <span class="required">*</span></label
+          >
+          <input type="text" id="school" name="school" required />
+
+          <label for="college"
+            >University/College: <span class="required">*</span></label
+          >
+          <input type="text" id="college" name="college" required />
+
+          <label for="uni-address"
+            >University/College Address: <span class="required">*</span></label
+          >
+          <textarea id="uni-address" name="uni-address" required></textarea>
+
+          <label for="degree"
+            >Degree Course: <span class="required">*</span></label
+          >
+          <input type="text" id="degree" name="degree" required />
+
+          <label for="previous-grants"
+            >Dates of KUC grants previously claimed:</label
+          >
+          <input type="text" id="previous-grants" name="previous-grants" />
+        </fieldset>
+
+        <!-- Reason for Application -->
+        <fieldset>
+          <legend>3. Reason for Application</legend>
+          <label for="reason"
+            >Reason for Application & please detail how any Grant would be
+            spent: <span class="required">*</span></label
+          >
+          <textarea id="reason" name="reason" rows="4" required></textarea>
+        </fieldset>
+
+        <!-- Estimated Costs -->
+        <fieldset>
+          <legend>4. Estimation of Costs</legend>
+          <label for="costs"
+            >Breakdown of estimated costs:
+            <span class="required">*</span></label
+          >
+          <textarea id="costs" name="costs" rows="4" required></textarea>
+
+          <label for="id-proof"
+            >Proof of ID (Student Enrolment Card, etc):
+            <span class="required">*</span></label
+          >
+          <input
+            type="file"
+            id="id-proof"
+            name="id-proof"
+            accept=".pdf,.jpg,.png"
+            required
+          />
+
+          <label for="course-doc"
+            >Official Course Confirmation:
+            <span class="required">*</span></label
+          >
+          <input
+            type="file"
+            id="course-doc"
+            name="course-doc"
+            accept=".pdf,.jpg,.png"
+            required
+          />
+        </fieldset>
+
+        <!-- Disclaimer -->
+        <fieldset>
+          <legend>Disclaimer and Signature</legend>
+          <a
+            >Please note, All questions should be answered fully. Incomplete
+            forms will not be considered for a grant.*
+          </a>
+          <p>
+            I certify that my answers are true and complete to the best of my
+            knowledge. If this application leads to a grant, I understand that
+            false or misleading information in my application may result in the
+            grant being withdrawn.
+          </p>
+          <label for="applicant-signature"
+            >Applicant's Signature: <span class="required">*</span></label
+          >
+          <canvas id="signature-pad"></canvas>
+          <br />
+          <button type="button" id="clear-signature" class="btn">Clear</button>
+          <input type="hidden" name="signature" id="signature-data" />
+
+          <label for="applicant-date"
+            >Date: <span class="required">*</span></label
+          >
+          <input
+            type="date"
+            id="applicant-date"
+            name="applicant-date"
+            required
+          />
+          <label for="applicant-signature"
+            >Parent/Guardian Signature (if applicant under 18yrs) :
+            <span class="required">*</span></label
+          >
+          <canvas id="signature-pad"></canvas>
+          <br />
+          <button type="button" id="clear-signature" class="btn">Clear</button>
+          <input type="hidden" name="signature" id="signature-data" />
+
+          <label for="full-name"
+            >Parent/Guardian Name: <span class="required">*</span></label
+          >
+          <input
+            placeholder="Frist names Family name"
+            type="text"
+            id="full-name"
+            name="full-name"
+            required
+          />
+
+          <label for="applicant-date"
+            >Date: <span class="required">*</span></label
+          >
+          <input
+            type="date"
+            id="applicant-date"
+            name="applicant-date"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Guidance Notes</legend>
+          <ul>
+            <li>
+              Please attach evidence of your University / College place /
+              Student status with your application.
+            </li>
+            <li>
+              Applications for Education Grants should be submitted prior to
+              15th October and will be considered by the Trustees at their
+              November Meeting. Grants are not automatically given year on year
+              and you must apply for a grant in each year of study.
+            </li>
+            <li>
+              You must normally be under 21 years old at the date of the first
+              application, although older applicants will be considered. A Post
+              Graduate application will be considered but the total of all
+              education grants made will be limited to THREE.
+            </li>
+            <li>
+              You must be resident in the Charity’s area of benefit (i.e. the
+              Parishes of Knowle, Dorridge, Bentley Heath, Barston and the Civil
+              Parishes of Balsall Common and Chadwick End.)
+            </li>
+            <li>
+              For security purposes all correspondence will be directed to your
+              home address and not to University/College Halls of Residence or
+              to your accommodation in the area of study
+            </li>
+            <li>
+              If you are under under 18 years, this application must be also be
+              signed by your parent or legal guardian to consent to the
+              application being made and payment of a grant to you.
+            </li>
+            <li>
+              The Decision of the Trustees as to the award of a Grant is final,
+              and no correspondence can be entered into.
+            </li>
+            <li>
+              Any money awarded and not used for the specified purpose should be
+              returned to the Clerk to the Trustees.
+            </li>
+          </ul>
+          <p>
+            All information disclosed to us will be treated in the strictest
+            confidence.
+          </p>
+          <p>
+            Please complete and return to – The Clerk to the Trustees S.J.
+            Chaloner, 31 Kenilworth Road, Knowle, Solihull, West Midlands, B93
+            0JB Email: Knowleunitedcharities@blueyonder.co.uk
+          </p>
+        </fieldset>
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </div>
+    <script src="js/application.js" defer></script>
+
+    <!-- Signature Pad JS -->
+  </body>
+</html>
