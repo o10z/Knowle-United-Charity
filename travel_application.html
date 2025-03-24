@@ -132,10 +132,12 @@
         <fieldset>
           <legend>Applicant's Signature</legend>
           <label>Sign Below: <span class="required">*</span></label>
-          <canvas id="signature-pad"></canvas>
+          <canvas id="signature-pad-1" class="signature-pad"></canvas>
           <br />
-          <button type="button" id="clear-signature">Clear</button>
-          <input type="hidden" name="signature" id="signature-data" />
+          <button type="button" id="clear-signature-1" class="btn">
+            Clear
+          </button>
+          <input type="hidden" name="signature-1" id="signature-data-1" />
         </fieldset>
 
         <!-- Guidance Notes -->
@@ -198,6 +200,8 @@
     </div>
 
     <!-- Signature Pad JS -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
     <script src="js/application.js" defer></script>
+    
   </body>
 </html>
