@@ -2,8 +2,7 @@
 
 /* General Styles */
 body {
-    margin: 0;
-    padding: var(--spacing4);
+    padding: var(--spacing4) 0;
     color: var(--color-black);
 }
 
